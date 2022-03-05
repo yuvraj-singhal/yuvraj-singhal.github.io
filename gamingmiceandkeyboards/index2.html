@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+h1 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+p {
+    color: #fff;
+    margin: 10px 0;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin: 20px 0
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+p {
+    color: #fff;
+    margin: 10px 0;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slideshow-conteiner">
+            <div class="mySlides fade">
+                <img src="https://images.pexels.com/photos/596750/pexels-photo-596750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class ="text">
+                    <h3>This is a cool controller.</h3>
+                    </div>
+                </div>
+            </div>
+                        
+                            <div class="mySlides fade">
+                                <img src="https://images.pexels.com/photos/2582928/pexels-photo-2582928.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                <div class ="text">
+                                    <h3>This is the insdie of a high end gaming pc.</h3>
+                            </div>
+                        </div>
+                                        
+                                            <div class="mySlides fade">
+                                                <img src="https://images.pexels.com/photos/7862491/pexels-photo-7862491.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                                <div class ="text">
+                                                    <h3>This is a setup with a really cool gaming chair.</h3>
+                                            </div>
+                                        </div>
+
+                                                                <div class="mySlides fade">
+                                                                    <img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                                                <div class ="text">
+                                                                    <h3>This is a pc setup. </h3>
+                                                            </div>
+                                                        </div>
+        
+    
+    </div>
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000);  // Change image every 2 seconds
+}
+    </script>
+
+    <a href="index.html">Go back to main page</a>
+</body>
+</html>
