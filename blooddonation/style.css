@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(#ED213A, #93291E);
+    height: auto;
+    
+}
+
+
+iframe {
+    height: 20px auto;
+}
+
+.container-1 {
+    margin: 50px;
+    padding: 15px;
+}
+
+
